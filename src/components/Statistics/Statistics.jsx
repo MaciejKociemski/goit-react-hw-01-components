@@ -9,11 +9,7 @@ export const Statistics = ({ title, stats }) => (
       <ul className={css.statList}>
         {stats.map(stat => {
           const bckgrColor = {
-            backgroundColor: `rgb(
-                  ${Math.floor(Math.random() * 256)},
-                  ${Math.floor(Math.random() * 256)},
-                  ${Math.floor(Math.random() * 256)}
-                )`,
+            backgroundColor: `hsl(${Math.floor(Math.random() * 360)}, 100%, 30%)`,
           };
 
           return (
