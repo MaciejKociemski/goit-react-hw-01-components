@@ -1,12 +1,13 @@
 .profile {
    width: 300px;
    margin: 50px 0;
-   padding-top: 20px;
+   padding-top: 50px;
    text-align: center;
    border: 1px solid rgba(219, 219, 219, 0.411);
    border-radius: 5px;
    background-color: rgba(219, 219, 219, 0.171);
    box-shadow: 3px 1px 5px rgba(215, 168, 168, 0.305);
+
  }
  .description {
    display: flex;
@@ -16,11 +17,20 @@
  }
 
   .name {
-   font-size: larger;
+   font-size: 18px;
    line-height: 1.47;
    font-weight: 700;
    padding: 5px 0;
+   animation: pulse 2s infinite;
  }
+
+ @keyframes pulse {
+  0% {
+    transform: scale(1);
+  ;}
+  50% {transform: scale(1.05);}
+}
+
  .avatar {
    width: 100px;
    height: 100px;
