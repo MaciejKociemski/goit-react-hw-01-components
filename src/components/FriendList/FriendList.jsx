@@ -4,14 +4,14 @@ import css from './FriendList.module.css';
 
 
 
-const getBackgroundColor = variant => {
-  switch (variant) {
+const getFriendsBackgroundColor = statusInTheNetwork => {
+  switch (statusInTheNetwork) {
     case true:
       return 'green';
     case false:
       return 'red';
     default:
-      throw new Error(`Unsupported variant prop value - ${variant}`);
+      throw new Error(`Unsupported variant prop value - ${statusInTheNetwork}`);
   }
 };
 
@@ -22,7 +22,7 @@ export const FriendList = ({ friends }) => (
         <li className={css.item} key={id}>
           <span
             className={css.status}
-            style={{ backgroundColor: getBackgroundColor(isOnline) }}
+            style={{ backgroundColor: getFriendsBackgroundColor(isOnline) }}
           ></span>
           <img
             className={css.avatar}
