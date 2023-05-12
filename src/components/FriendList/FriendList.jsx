@@ -3,6 +3,7 @@ import css from './FriendList.module.css';
 
 
 
+
 const getBackgroundColor = variant => {
   switch (variant) {
     case true:
