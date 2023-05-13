@@ -29,7 +29,6 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  animation: pulse 2s infinite;
 }
 
 .avatar{
@@ -48,18 +47,4 @@
 }
 .status.isOnline{
     background-color: green;
-}
-
-
-
- @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-}
-  100% {
-    transform: scale(1);
-}
 }
