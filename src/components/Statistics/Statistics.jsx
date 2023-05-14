@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
+import getRandomColor from '../../utils/getRandomColor';
 
 export const Statistics = ({ title, stats }) => (
   <>
@@ -9,7 +10,7 @@ export const Statistics = ({ title, stats }) => (
       <ul className={css.statList}>
         {stats.map(stat => {
           const bckgrColor = {
-            backgroundColor: `hsl(${Math.floor(Math.random() * 360)}, 100%, 30%)`,
+            backgroundColor: getRandomColor(),
           };
 
           return (
@@ -26,5 +27,11 @@ export const Statistics = ({ title, stats }) => (
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
