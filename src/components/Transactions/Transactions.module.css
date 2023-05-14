@@ -22,10 +22,9 @@
   padding: 10px;
 }
 
-
 td {
-    border: 1px solid var(--border-color);
-    box-shadow: 1px 1px 3px var(--shadow-color) inset;
+  border: 1px solid var(--border-color);
+  box-shadow: 1px 1px 3px var(--shadow-color) inset;
 }
 
 table {
@@ -44,14 +43,14 @@ table {
 
 .tableCurrency {
   padding: 10px 110px;
-  width: 300px; 
+  width: 300px;
 }
 
-.tr {background-color: white;
+.tr {
+  background-color: white;
   height: 30px;
 }
 
 .tr:nth-child(even) {
   background-color: var(--bcg-color-table);
 }
-
