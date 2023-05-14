@@ -3,6 +3,7 @@
   --border-color: rgba(219, 219, 219, 0.411);
   --background-color: rgba(219, 219, 219, 0.171);
   --label-color: rgb(126, 105, 105);
+  --silver: rgb(214, 209, 209);
 }
 
 
@@ -39,7 +40,7 @@
    border-radius: 50%;
    display: block;
    box-shadow: 3px 1px 5px var(--shadow-color);
-   background-color: silver;
+   background-color: var(--silver);
  }
 
  .tag,
